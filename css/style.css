@@ -32,24 +32,31 @@ main ul li::before {
 
 h1, h2, h3, h4, h5 {
     font-weight: 700;
-    font-weight: 700;
 }
 
 h4 {
     font-size: 16px;
+    margin-top: 25px;
 }
 
 h3 {
     font-size: 22px;
-    margin: 0 0 20px 0;
+    margin: 50px 0 20px 0;
 }
 
 h2 {
     font-size: 14px;
+    margin-bottom: 25px;
 }
 
 h1 {
     font-size: 45px;
+    margin-bottom: 25px;
+    line-height: 45px;
+}
+
+body b {
+    color: #000 !important;
 }
 
 /*===================================_SIDEBAR_==========================================*/
@@ -104,6 +111,55 @@ aside .contacts div {
 
 .aboutMe ul li::before {
     color: #000;
+}
+
+.aboutMe .orangeColor {
+    color: #ff7518;
+}
+
+.aboutMe .timePlace {
+    color: #bebebe;
+}
+
+.aboutMe .aboutHeader {
+    max-width: 440px;
+}
+
+.aboutMe .projects h3 {
+    margin-bottom: 9px;
+}
+
+.aboutMe .projects {
+    margin-top: 65px;
+}
+
+.aboutMe ol {
+    list-style: none;
+    counter-reset: customCounter;
+}
+
+.aboutMe ol li {
+    counter-increment: customCounter;
+}
+
+.aboutMe ol li * , .aboutMe a{
+    color: #979797;
+}
+
+.aboutMe ol li::before {
+    content: counter(customCounter) ".";
+    font-weight: 700;
+    display: inline-block;
+    width: 1rem;
+    margin-right: 9px;
+}
+
+.aboutMe .workExp {
+    margin-top: 50px;
+}
+
+.aboutMe .timePlace {
+    margin-bottom: 10px;
 }
 
 /*===================================_ABOUT_ME_END_======================================*/
