@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 24px;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+}
+
+body {
+    background-color: #f5f7fa;
+    font-family: Montserrat, sans-serif;
+}
+
+body main {
+    margin: 20px;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
+main ul {
+    list-style: none;
+}
+
+main ul li::before {
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 22px;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+/*===================================_SIDEBAR_==========================================*/
+
+aside {
+    background-color: #1e2939;
+    width: 370px;
+    color: #fff;
+}
+
+aside img {
+    width: 100%;
+    object-fit: contain;
+    margin: 40px 0 0 0;
+}
+
+aside>div {
+    margin: 55px 40px;
+}
+
+aside .contacts a {
+    font-weight: 400;
+    color: #454e5a;
+    margin: 0 0 0 10px;
+}
+
+aside .contacts label {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+aside li {
+    color: #d8dadd;
+}
+
+aside ul li::before {
+    color: #ff6b08;
+}
+
+aside .contacts div {
+    margin: 5px 0;
+}
+
+/*===================================_SIDEBAR_END_======================================*/
+
+/*===================================_ABOUT_ME_=========================================*/
+
+.aboutMe {
+    margin: 110px 90px;
+    color: #000;
+}
+
+.aboutMe ul li::before {
+    color: #000;
+}
+
+/*===================================_ABOUT_ME_END_======================================*/
