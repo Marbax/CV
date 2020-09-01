@@ -59,6 +59,31 @@ body b {
     color: #000 !important;
 }
 
+a {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-decoration: none;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
 /*===================================_SIDEBAR_==========================================*/
 
 aside {
@@ -79,8 +104,12 @@ aside>div {
 
 aside .contacts a {
     font-weight: 400;
-    color: #454e5a;
+    color: #646c77;
     margin: 0 0 0 10px;
+}
+
+aside .contacts a::before {
+    background-color: #fff;
 }
 
 aside .contacts label {
@@ -142,7 +171,7 @@ aside .contacts div {
     counter-increment: customCounter;
 }
 
-.aboutMe ol li * , .aboutMe a{
+.aboutMe ol li *, .aboutMe a {
     color: #979797;
 }
 
