@@ -92,6 +92,24 @@ a:hover::before {
     transform: scaleX(1);
 }
 
+#print-btn {
+    transition: 0.6s;
+    cursor: pointer;
+    padding: .1rem;
+    border: 0px solid;
+    border-radius: .2rem; 
+    background: none;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    color: #ff7518;
+}
+
+#print-btn:hover {
+    transition: 0.6s;
+    box-shadow: 0px 0px 12px 0px #ff7518;
+}
+
 /*===================================_SIDEBAR_==========================================*/
 
 aside {
@@ -254,6 +272,24 @@ a {
 }
 */
 /*===================================_LINK_ANIM_END_=====================================*/
+@media print {
+    @page {
+        margin: 0;
+    }
+    head {
+        display: none !important;
+    }
+    * {
+        font-size: 1.1rem;
+        -webkit-print-color-adjust: exact;
+    }
+    aside {
+        background-color: #1e2939;
+    }
+    #print-btn {
+        display: none !important;
+    }
+}
 
 @media screen and (max-width: 1000px) and (min-width: 0px) {
     * {
