@@ -20,7 +20,7 @@
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="./css/style.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <title>Morozov Mykyta's CV</title>
     </head>
 
@@ -75,8 +75,9 @@
                 </div>
             </aside>
 
-            <button id="print-btn" onclick="window.print()">Print to PDF</button>
-            
+            <button class="top-sticky-btn print-btn">Print to PDF</button>
+            <button class="top-sticky-btn get-fancy-preview" style="top:4rem;">Get a fancy link</button>
+
             <div class="aboutMe">
                 <div class="aboutHeader">
                     <h2>.Net Developer</h2>
@@ -190,5 +191,15 @@
                 </div>
             </div>
         </main>
+        <script>
+                document.querySelector('.print-btn').addEventListener('click', () => {
+                    window.print()
+                })
+
+                document.querySelector('.get-fancy-preview').addEventListener('click', () => {
+                const text = `Morozov Mykyta - .Net Developer\nC#, JS, TS, React/Native, Vue/Nuxt, Umbraco, SQL\Basic knowledge of clouds and containers\nOther minor develop supporting systems\n\n`
+                navigator.clipboard.writeText((`${text}${location.href}`))
+            })
+        </script>
     </body>
 </html>

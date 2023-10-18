@@ -92,7 +92,7 @@ a:hover::before {
     transform: scaleX(1);
 }
 
-#print-btn {
+.top-sticky-btn {
     transition: 0.6s;
     cursor: pointer;
     padding: .1rem;
@@ -105,7 +105,7 @@ a:hover::before {
     color: #ff7518;
 }
 
-#print-btn:hover {
+.top-sticky-btn:hover {
     transition: 0.6s;
     box-shadow: 0px 0px 12px 0px #ff7518;
 }
@@ -286,7 +286,7 @@ a {
     aside {
         background-color: #1e2939;
     }
-    #print-btn {
+    .top-sticky-btn {
         display: none !important;
     }
 }
